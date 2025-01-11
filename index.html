@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <section id="inicio">
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">OC</a>
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#hobbies" onclick="seleccionar()">HOBBIES</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                        <li><a href="#formacion" onclick="seleccionar()">FORMACION</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header> 
+        </div>
+
+        <!-- INICIO -->
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Osiris Contreras</span>, Data Analyst</h2>              
+            <a href="#portfolio">Ir a Portafolio</a>
+            <a class="title__network__item--descargaCV" href="">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Osiris Contreras.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+        <h3 class="titulo-seccion">Hobbies</h3>
+        <div class="fila">
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/astronomia.jpg" alt="">
+                <div class="info">
+                    <h4>ASTRONOMIA</h4>
+                    <p>Astrofotografia</p>
+                </div>
+            </div>
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/musica.jpg" alt="">
+                <div class="info">
+                    <h4>MUSICA</h4>
+                    <p>Escuchar musica</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/senderismo.jpg" alt="">
+                <div class="info">
+                    <h4>ACTIVIDADES AL AIRE LIBRE</h4>
+                    <p>Senderismo-Acampar</p>
+                </div>
+            </div>
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/museo2.jpg" alt="">
+                <div class="info">
+                    <h4>VISITAR MUSEOS</h4>
+                    <p>Arte</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/arqueologia2.jpg" alt="">
+                <div class="info">
+                    <h4>ARQUEOLOGIA</h4>
+                    <p>Fosiles</p>
+                </div>
+            </div>
+            <div class="pasatiempo">
+                <div class="overlay"></div>
+                <img src="img/Videojuegos.jpg" alt="">
+                <div class="info">
+                    <h4>VIDEOJUEGOS</h4>
+                    <p>PC Gaming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Office.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>OFFICE</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/PowerBI.jpg" alt="">
+                    <div class="overlay">
+                        <h3>POWER BI</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/HTML.png" alt="">
+                    <div class="overlay">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/CSS.png" alt="">
+                    <div class="overlay">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/JS.jpg" alt="">
+                    <div class="overlay">
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/PY.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>PYTHON</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/SQL.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>SQL SERVER</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/encriptador.png" alt="">
+                    <div class="overlay">
+                        <h3>ENCRIPTADOR DE TEXTO</h3>
+                        <p>HTML-CSS-JS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMACION -->
+    <section id="formacion">
+        <h3 class="titulo-seccion">FORMACION</h3>
+        <div class="fila">
+            <div class="educacion">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>SANTANDER OPEN ACADEMY</h4>
+                <ul class="educacion-tag">
+                    <li>DATA ANALYST</li>
+                    <li>IA</li>
+                    <li>PYTHON</li>
+                </ul>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>ALURA LATAM-ORACLE NEXT EDUCATION</h4>
+                <ul class="educacion-tag">
+                    <li>FRONT-END</li>
+                </ul>
+                <p>HTML-CSS-JS-REACT</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>UNIVERSIDAD AUTONOMA DEL NORESTE</h4>
+                <ul class="educacion-tag">
+                    <li>ARQUITECTURA</li>
+                </ul>
+            </div>
+    </section>
+
+    <!-- CONTACTO -->  
+    <section class="formcontacto" id="contacto">
+        <h3 class="titulo-seccion">CONTACTO</h3>
+        <div  class="formcontacto__contacto">
+            <div class="formcontacto__text">
+                <form class="formcontacto__form" name="form"> 
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="text" maxlength="50" name="nombre" placeholder="Nombre" required data-tipo="nombre">
+                        <span class="input-mensaje-error"></span>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="email" maxlength="40" name="email" placeholder="E-mail" required data-tipo="email">
+                        <span class="input-mensaje-error"></span>
+                    </div>
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="text" maxlength="50" name="asunto" placeholder="Asunto" required data-tipo="asunto">
+                        <span class="input-mensaje-error"></span>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="formcontacto__textarea" rows="5" cols="40" maxlength="300" id="mensaje" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                        <span class="input-mensaje-error"></span>
+                    </div>   
+                                         
+                    <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <p>Todos los derechos reservados - 2025</p>
+    <div class="redes">
+    </div>
+</footer>
+</html>
